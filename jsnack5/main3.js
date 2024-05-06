@@ -1,16 +1,25 @@
 'use strict'
 
-let numeriDispari = [];
+const numeriDispari = [];
 
 
-for (let i = 0; i < 6; i++) {
+for (let i = 1; i <= 6; i++) {
  
-    numeriDispari[i]=Number(prompt (`inserire un numero ${i}`));
+    const input = (prompt (`inserire un numero ${i}`));
 
-    if (numeriDispari.value % 2 === false) {
 
-       
+    const inpuutnan = parseInt(input);
+
+    if(!isNaN(parseInt(input))) {
+      console.log('numero')
+      if  (inpuutnan % 2 !== 0) {
+      
+        numeriDispari.push(inpuutnan);
+
+      }
+    
     }
+    
 }
 
 console.log(numeriDispari);
